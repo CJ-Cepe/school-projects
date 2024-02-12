@@ -1,0 +1,46 @@
+[System]
+Name='Fuzzy Fan'
+Type='mamdani'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=9
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='Temperature'
+Range=[0 100]
+NumMFs=3
+MF1='cool':'trapmf',[0 0 0 50]
+MF2='warm':'trimf',[30 50 70]
+MF3='hot':'trapmf',[50 100 100 100]
+
+[Input2]
+Name='Clock_Speed'
+Range=[0 5]
+NumMFs=3
+MF1='throttling':'trapmf',[0 0 0 3.98]
+MF2='base':'trimf',[3.469 3.98 4.49]
+MF3='boosting':'trapmf',[3.98 5 5 5]
+
+[Output1]
+Name='Fan_Speed'
+Range=[0 2000]
+NumMFs=2
+MF1='slow':'trapmf',[0 0 0 1500]
+MF2='fast':'trapmf',[500 2000 2000 2000]
+
+[Rules]
+1 1, 1 (1) : 1
+2 1, 1 (1) : 1
+3 1, 2 (1) : 1
+1 2, 1 (1) : 1
+2 2, 1 (1) : 1
+3 2, 2 (1) : 1
+1 3, 2 (1) : 1
+2 3, 2 (1) : 1
+3 3, 2 (1) : 1
