@@ -1,0 +1,40 @@
+[System]
+Name='Untitled'
+Type='mamdani'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=2
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='Temp'
+Range=[0 100]
+NumMFs=4
+MF1='Freezing':'trapmf',[0 0 30 50]
+MF2='Cool':'trimf',[30.2645502645503 50.2645502645503 70.2645502645503]
+MF3='Hot':'trapmf',[70 90 100 100]
+MF4='Warm':'trimf',[50 70 90]
+
+[Input2]
+Name='Cover'
+Range=[0 100]
+NumMFs=3
+MF1='Sunny':'trapmf',[0 0 20 40]
+MF2='Partly_Cloudy':'trimf',[20 50 80]
+MF3='Overcast':'trapmf',[60 80 100 100]
+
+[Output1]
+Name='Speed'
+Range=[0 100]
+NumMFs=2
+MF1='Slow':'trapmf',[0 0 25 75]
+MF2='Fast':'trapmf',[25 75 100 100]
+
+[Rules]
+4 1, 2 (1) : 1
+2 2, 1 (1) : 1
