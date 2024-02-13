@@ -1,0 +1,292 @@
+/*Travel diaries*/
+
+/*===Font Family===*/
+@font-face {
+  font-family: 'ballpark';
+  src: url('../fonts/ballpark.eot');
+  src: url('../fonts/ballpark.woff') format('woff'),
+		url('../fonts/ballpark.ttf') format('truetype'),
+		 url('../fonts/ballpark.eot') format('embedded-opentype'),
+		  url('../fonts/ballpark.svg') format('svg');
+			
+}
+
+@font-face {
+  font-family: 'dayrom';
+  src: url('../fonts/dayrom.eot');
+  src: url('../fonts/dayrom.woff') format('woff'),
+		url('../fonts/dayrom.ttf') format('truetype'),
+		 url('../fonts/dayrom.eot') format('embedded-opentype'),
+		  url('../fonts/dayrom.svg') format('svg');
+}
+html{
+	
+padding:0;
+margin:0;
+}
+/*=======================Main Wrapper====================*/
+#main_wrapper_ID{
+	margin:0px 60px;
+	padding:10px 50px;
+	background-image: url("../images/yellow_background.png");
+/*	border-style: dotted;
+	border-color: black; */
+}	
+	
+/*==========================Header=======================*/
+#main_title_ID{
+	padding:0px 10px;
+}
+
+#main_title_ID h1{
+	padding: 25px 0px 0px 0px;
+	font-family: ballpark;
+}
+
+#main_title_ID h2{
+	
+	font-size: 20px;
+	font-family: dayrom;
+}
+#logo_ID{
+	height: 50px;
+	width: 50px;
+	float: left;
+}
+
+header nav{
+	position:absolute;
+	right:100px;
+	top:70px;
+}
+
+header nav ul{
+  list-style-type: none;
+}
+
+header nav ul li{
+  display: inline;
+}
+
+header nav ul li a{
+	text-transform: uppercase;
+  	font-size: 25px;
+	font-family: dayrom;
+	padding-right: 30px;
+}
+
+header nav ul li a:link {
+  text-decoration: none;
+  color: black;
+}
+
+header nav ul li a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+header nav ul li a:active {
+  text-decoration: underline;
+}
+
+/*=======================Banner===========================*/
+#banner_image_ID{
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../images/sanfrancisco.jpg");
+	border-radius: 15px;
+	background-repeat: no-repeat;
+	background-color: #cccccc;
+	background-size: cover;
+	height:250px;
+	width:100%;
+}
+
+#banner_description_ID{
+align-self: flex-end;
+padding: 5px 20px;
+color: white;
+border-radius: 0px 0px 15px 15px;
+background-color: rgba(0, 0, 0, 0.6);
+width:100%;
+font-family: arial;
+}
+
+#banner_description_ID a{
+float: right;
+background-image: url("../images/red_background.png");
+padding: 5px 5px;
+border-radius: 5px;
+color: white;
+}
+
+#banner_description_ID a:link {
+  text-decoration: none;
+}
+
+#banner_description_ID a:visited {
+  text-decoration: none;
+}
+
+#banner_description_ID a:hover {
+  text-decoration: none;
+}
+
+#banner_description_ID a:active {
+  text-decoration: none;
+}
+
+/*=========================Section==========================*/
+section{
+	margin: 20px 0px;
+	display: inline-block;	
+	border-radius: 15px;
+}
+
+section article{
+	display: block;	
+	float:left;
+	width: 66.7%;
+	height:100%;
+	padding: 8px 20px;
+	border-radius: 15px;
+}
+
+section article h1{
+	text-transform: uppercase;
+	padding:0px 0px 0px 5px;
+	font-size: 20px;
+	font-family: dayrom;
+}
+/*.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}*/
+
+section article img{
+ height:50px;
+ width:50px;
+ float:left;
+ padding:5px 5px 0px 0px;
+}
+
+section article p{
+font-size: 12pt;
+font-family: arial;
+text-align: justify;
+}
+
+section aside {
+	display: block;	
+	float:right;
+	width: 25%;
+	background-color: gray;
+	text-align: justify;
+	padding: 0px 20px;
+	color:white;
+	border-radius: 15px;
+}
+
+section aside h1{
+	text-transform: uppercase;
+	padding:0px 0px 0px 5px;
+	font-size: 20px;
+	font-family: dayrom;
+}
+
+/*#arrow_ID{
+	position:absolute;
+	right:436px;
+	center:90px;
+}*/
+
+#zozor_picture_ID{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+#p_section_icon_ID{
+text-align:center;	
+}
+
+#p_section_icon_ID img{
+	width: 40px;
+	height: 40px;
+	padding: 0px 5px;
+}
+
+/*=========================Footer==========================*/
+footer{
+
+	padding: 5px 10px;
+	text-align: center;
+}
+#top_icon_ID{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+footer h1{
+	text-transform: uppercase;
+	padding:0px 0px 0px 5px;
+	font-size: 20px;
+	font-family: dayrom;
+}
+
+#tweet_ID{
+	text-align: left;
+	padding: 0px 5px;
+	border-style: solid;
+	border-radius: 15px;
+	width: 20%;
+	display: inline-block;
+	vertical-align:top;
+	margin:2px;
+}
+
+#my_pictures_ID{
+	text-align: center;
+	padding: 0px 5px;
+	border-style: solid;
+	border-radius: 15px;
+	width: 30%;
+	display: inline-block;
+	vertical-align:top;
+	margin:2px;
+}
+#my_pictures_ID h1{
+	text-align: left;
+	
+}
+#my_pictures_ID img{
+	border-style: solid;
+	border-color:black;
+	margin: 0px 2px;
+}
+
+#my_friends_ID{
+	text-align: left;
+	padding: 0px 5px;
+	border-style: solid;
+	border-radius: 15px;
+	width: 25%;
+	display: inline-block;
+	vertical-align:top;
+	margin:2px;
+}
+
+#my_friends_ID ul{
+	list-style-image: url('../images/external_link.png');
+	display: inline-block;	
+	padding: 0px 0px 0px 25px;
+}

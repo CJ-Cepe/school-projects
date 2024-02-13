@@ -1,0 +1,111 @@
+html{
+	background-image: url('../images/airplane.jpg');	
+	background-repeat: no-repeat;
+	background-color: #cccccc;
+	background-size: cover;
+	
+}
+header nav{
+	position:absolute;
+	right:100px;
+	top:70px;
+	color: white;
+}
+
+header nav ul{
+  list-style-type: none;
+}
+
+header nav ul li{
+  display: inline;
+}
+
+header nav ul li a{
+	text-transform: uppercase;
+  	font-size: 25px;
+	font-family: dayrom;
+	padding-right: 30px;
+}
+
+header nav ul li a:link {
+  text-decoration: none;
+  color: yellow;
+}
+
+header nav ul li a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+header nav ul li a:active {
+  text-decoration: underline;
+}
+
+body{
+	display:block;
+	padding: 5% 0%;
+	margin: 3% 2%;
+	background-color: rgba(0, 0, 0, 0.8);	
+}
+
+#first_half_ID{
+	display: inline-block;
+	vertical-align:top;
+	margin:5% 0% 0% 10%;	
+	border-style: solid;
+	border-color: white;
+	text-align:center;
+	padding: 1% 2%;
+}
+
+#profile_img_ID {
+  height: 300px;
+}
+
+#name_ID {
+  font-family: Garamond;
+  font-size: 3em;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+
+#occupation_ID {
+  font-family: helvetica;
+  font-size: 20px;
+  color: #CCCC00;
+  margin:0;
+}
+
+#second_half_ID{
+	display: inline-block;	
+	vertical-align:top;
+	width: 60%;
+	
+	margin:8% 0% 0% 2%;
+	padding:5px 20px;
+	color: white;
+}
+
+#career_ID{
+  font-family: helvetica;
+  font-size: 2em;
+  margin: 0;
+}
+
+#second_half_ID h3{
+  font-family: Times new roman;
+  font-size: 6em;
+  margin: 0;
+	
+}
+
+#second_half_ID p{
+	text-align: justify;
+	font-size: 14pt;
+}
+
