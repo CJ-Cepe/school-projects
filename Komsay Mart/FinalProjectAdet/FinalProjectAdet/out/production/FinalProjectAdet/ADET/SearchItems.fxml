@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ADET.Controller.SearchItemsController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="searchTextField" layoutX="58.0" layoutY="33.0" prefHeight="64.0" prefWidth="1077.0" promptText="enter Item to be search" />
+            <TableView fx:id="searchItemsTable" layoutX="58.0" layoutY="117.0" prefHeight="528.0" prefWidth="1083.0">
+              <columns>
+                <TableColumn prefWidth="47.0" text="#" />
+                <TableColumn prefWidth="117.0" text="Item Number (ID)" />
+                  <TableColumn prefWidth="281.0" text="Name" />
+                  <TableColumn minWidth="2.0" prefWidth="211.0" text="Brand" />
+                  <TableColumn prefWidth="193.0" text="Category" />
+                  <TableColumn prefWidth="123.0" text="Price" />
+                  <TableColumn prefWidth="110.0" text="Quantity" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,22 @@
+			          Komsay Mart 
+			       BSCS 3-4 Group 6
+			        Refund ID - 50
+			          2021-02-19
+			           17:49:25
+
+
+		   Transaction information to be refunded
+
+
+Transaction ID:    115
+Date:              2021-02-19
+Time:              17:49:25
+
+Total Amount       6.0
+
+
+
+----------------------------------------------------------------
+			       Refund Successful!
+			Thank you for shopping with us!
+----------------------------------------------------------------

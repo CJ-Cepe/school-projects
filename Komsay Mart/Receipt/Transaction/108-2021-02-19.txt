@@ -1,0 +1,30 @@
+			          Komsay Mart 
+			       BSCS 3-4 Group 6
+			      Transaction ID - 108
+			          2021-02-16
+			           14:25:20
+
+
+-----------------------------------------------------------------
+QTY   ITEM                BRAND          PRICE          AMOUNT
+-----------------------------------------------------------------
+
+ 8    CREAMSILK PINK      CREAMSILK      23.00          184.00         
+ 2    ULTA THICK BLEACH   DOMEX          87.00          174.00         
+ 3    KOPIKO BLANCA 3-IN-1KOPIKO         130.00         390.00         
+ 4    REBISCO CHOCO       REBISCO        50.00          200.00          
+
+
+
+
+		------------------
+TOTAL            948.0
+CASH             1000.0
+CHANGE           52.0
+
+
+
+-----------------------------------------------------------------
+			      Purchase Successful!
+			Thank you for shopping with us!
+-----------------------------------------------------------------

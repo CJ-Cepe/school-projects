@@ -1,0 +1,30 @@
+			          Komsay Mart 
+			       BSCS 3-4 Group 6
+			      Transaction ID - 114
+			          2021-02-19
+			           17:23:18
+
+
+-----------------------------------------------------------------
+QTY   ITEM                BRAND          PRICE          AMOUNT
+-----------------------------------------------------------------
+
+ 2    ULTA THICK BLEACH   DOMEX          87.00          174.00         
+ 2    KOPIKO BLANCA 3-IN-1KOPIKO         130.00         260.00         
+ 14   MR.CHIPS            JACK'NJILL     7.00           98.00          
+ 14   MR.CHIPS            JACK'NJILL     7.00           98.00           
+
+
+
+
+		------------------
+TOTAL            630.0
+CASH             700.0
+CHANGE           70.0
+
+
+
+-----------------------------------------------------------------
+			      Purchase Successful!
+			Thank you for shopping with us!
+-----------------------------------------------------------------
