@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html>
+<div id="parentBody_ID">
+<head>
+	<title> Da' Bes Coffee Shop </title>
+	<link rel="stylesheet" href="css/design.css">
+	
+	<div id="headerBordy_ID">
+		<h1> Da' Bes Cofee Shop </h1>
+	</div>
+</head>
+
+<nav>
+	<div id="navigatorBody_ID">
+		<a href="#" class="navigator_CLASS" onclick='document.getElementById("shownBody_ID").innerHTML = document.getElementById("homeBody_ID").innerHTML'>Home</a> <br />
+		<a href="#" class="navigator_CLASS" onclick='document.getElementById("shownBody_ID").innerHTML = document.getElementById("menuBody_ID").innerHTML'>Menu</a> <br />
+		<a href="#" class="navigator_CLASS" onclick='document.getElementById("shownBody_ID").innerHTML = document.getElementById("musicBody_ID").innerHTML'>Music</a> <br />
+		<a href="#" class="navigator_CLASS" onclick='document.getElementById("shownBody_ID").innerHTML = document.getElementById("jobsBody_ID").innerHTML'>Jobs</a> <br />
+	</div>
+</nav>
+
+<body>
+
+	<div id="shownBody_ID">
+		
+	</div>
+	
+	<!-----------------H O M E------------------>
+	<div id="homeBody_ID" hidden>
+	
+		<p id="pHome1_ID">Everything <br /> gets better <br /> with coffee</p>
+		
+		<p id="pHome2_ID">Come in and experience... <img id="homeImage_ID" class="images" src="images/coffee_cup.jpg" alt="Delicious coffee" > </p>
+		 
+		<ul class="squareList_CLASS">
+			<li>Specialty Cofee and Espresso</li>
+			<li>Freshly made sandwiches</li>
+			<li>Bagels, Muffins, and Organic Snacks</li>
+			<li>Music and Poetry Readings </li>
+			<li>Open mic nights</li>
+			<li>...</li>
+		</ul>
+		<p id="pHome3_ID">
+			23 Sumulong Hwy, Sta. Cruz
+			<br />
+			Antipolo, 1870 Rizal
+			<br />
+			+63-280-5556-681
+		</p>
+	</div>
+	
+	<!-----------------M E N U------------------>
+	<div id="menuBody_ID" hidden>
+	
+		<h2>COFFEE & ESPRESSO</h2>
+		<ul class="menuList_CLASS">
+			<li>Coffee <strong class="menuPrice">125</strong><p class="menuDescription_CLASS">Locally-roasted organic beans</p></li>
+			<li>Espresso <strong class="menuPrice">130</strong> <p class="menuDescription_CLASS">Served alone or over a dallop of whipped cream</p></li>
+			<li>Macchiato <strong class="menuPrice">140</strong> <p class="menuDescription_CLASS">Espresso with a dallop of milk</p></li>
+			<li>Latte <strong class="menuPrice">150</strong> <p class="menuDescription_CLASS">Espresso with steamed milk</p></li>
+			<li>Breve <strong class="menuPrice">145</strong> <p class="menuDescription_CLASS">Espresso with steamed half and half</p></li>
+			<li>Mocha <strong class="menuPrice">140</strong> <p class="menuDescription_CLASS">Espresso premium chocolate syrup and steamed milk</p></li>
+		</ul>
+		<img id="menuImage1_ID" class="images" src="images/espresso.jpg" alt="Delicious espresso" >
+		<h2>SANDWICHES</h2>
+		<ul class="menuList_CLASS">
+			<li>Ham & Swiss <strong class="menuPrice">105</strong> </li>
+			<li>Chicken & Cheese <strong class="menuPrice">145</strong> </li>
+			<li>Tuna & Salad <strong class="menuPrice">115</strong> </li>
+			<li>Pepper & Eggs <strong class="menuPrice">85</strong> </li>
+			<li>BBQ & Cheese <strong class="menuPrice">150</strong> </li>
+		</ul>
+		<img id="menuImage2_ID" class="images" src="images/sandwich.jpg" alt="Delicious sandwich" >
+		<h2>BREAD</h2>
+		<ul class="menuList_CLASS">
+			<li>Bagel <strong class="menuPrice">70</strong> </li>
+			<li>Muffin <strong class="menuPrice">65</strong> </li>
+			<li>Bagutte <strong class="menuPrice">85</strong> </li>
+			<li>Banana bread <strong class="menuPrice">80</strong> </li>			
+		</ul>
+		<img id="menuImage3_ID" class="images" src="images/bagel.jpg" alt="Delicious bagel" >
+	</div>
+	
+	<!----------------M U S I C----------------->
+	<div id="musicBody_ID" hidden>
+		<h2>MUSIC</h2>
+			<ul class="menuList_CLASS">
+				<li>Dreaming<audio controls class="music"><source src="music/Dreaming.mp3"/><source src="music/Dreaming.ogg"/><p>This browser does not support mp3 and ogg format</p></audio></li>
+				<li>I Need a Girl<audio controls class="music" ><source src="music/I Need a Girl.mp3"/><source src="music/I Need a Girl.ogg"/><p>This browser does not support mp3 and ogg format</p></audio></li>
+				<li>island<audio controls class="music" ><source src="music/island.mp3"/><source src="music/island.ogg"/><p>This browser does not support mp3 and ogg format</p></audio></li>
+				<li>Moon<audio controls class="music" ><source src="music/Moon.mp3"/><source src="music/Moon.ogg"/><p>This browser does not support mp3 and ogg format</p></audio></li>
+				<li>Relax your mind<audio controls class="music"><source src="music/Relax your mind.mp3"/><source src="music/Relax your mind.ogg"/><p>This browser does not support mp3 and ogg format</p></audio></li>
+			</ul>
+			<img id="musicImage_ID" class="images" src="images/person.jpg" alt="happy person" >
+			
+		<p id="pMusic1_ID">Visit the shop for more...</p>	
+	</div>
+	
+	<!-----------------J O B S------------------>
+	<div id="jobsBody_ID" hidden>
+		<h2>JOBS</h2>
+		<p id="pF1_ID">	We are currently hiring! </p>
+		<p id="pF2_ID"> looking for:
+			<ul class="squareList_CLASS">
+				<li>Barista <p id="pF3_ID">Part-time / Full-time positions available</p></li>
+				<li>Head Cook	</li>
+				<li>Shift Manager	</li>
+			</ul>
+		</p>
+		<p id="pF4_ID">
+			submit your updated resume at
+			<a href="mailto:Da'Bes@jcofee.com">Da'Bes@jcofee.com<a>
+		</p>
+		<img id="jobImage_ID" class="images" src="images/person2.jpg" alt="happy person" >
+	</div>
+	
+	<!------For initializing shownBody_ID------->
+	<script>
+		document.getElementById("shownBody_ID").innerHTML = document.getElementById("homeBody_ID").innerHTML
+	</script>
+</body>
+	
+<footer>
+	<div id="footerBody_ID">
+		<p>Copyright &copy 2021 Da' Bes Coffee House <br /> <a href="mailto:Da'Bes@jcofee.com"> Da'Bes@jcofee.com </a></p>
+	</div>
+</footer>
+
+</div>
+</html>
