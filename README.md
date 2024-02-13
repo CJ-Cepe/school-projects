@@ -1,5 +1,5 @@
-Repository of my past academic projects and assignments.
-__ I’m currently in the process of locating and uploading my previous works. __
+#Repository of my past academic projects and assignments.#
+I’m currently in the process of locating and uploading my previous works.
 
 Some of the Projects here are:
 * Komsay Mart - 2021
