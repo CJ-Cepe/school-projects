@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>PUP hymn</title>	
+	<style>
+	.header {
+		background-image: url("images/headerBackground.jpg");
+		height: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	
+	.logo {
+		float:left;
+		margin-right: 20px;
+		margin-left: 15px;
+	}
+	
+	.logoSign {
+		color: white;
+		font-family: Helvetica;
+		margin-top: 20px;
+		font-weight: bold;
+	}
+	
+	.body {
+		display: block;
+		text-align: center;
+	}
+	
+	#pupHymnHeader {
+		font-family: Verdana;
+		font-size: 30px;
+		color: maroon;
+	}
+	
+	#lyrics {
+		text-align: center;
+		font-family: Verdana;
+		font-size: 20px;
+		color: maroon;
+		letter-spacing: 2px;
+		line-height: 60px;
+	} 
+		
+	#marqueeLyrics {
+		
+		height: 300px;
+		width: 500px;
+		overflow: hidden;
+		position: relative;
+		border: 0.5px dotted maroon;
+	}
+	
+	.footer {
+	text-align: center;
+	}
+	
+	#again {
+		font-family: Verdana;
+		font-size: 20px;
+	}
+	
+	</style>
+	
+	<div class="header">
+	<br />
+		<img src= "images/PUPLogo.png" alt="logo of the PUP" width="60px" height = "60px" class="logo"/>
+	
+		<p class = "logoSign">
+			POLYTECHNIC UNIVERSITY OF THE PHILIPPINES
+		</p>
+	<br />
+	</div>
+</head>
+
+<body>
+	<div class="body">
+	<h1 id="pupHymnHeader">PUP HYMN</h1>
+	<marquee id ="marqueeLyrics" direction="up" scrollamount="1.8" loop = "1">
+		<p id="lyrics">
+		Sintang Paaralan <br />
+		Tanglaw ka ng bayan <br />
+		Pandayan ng isip ng kabataan <br />
+		Kami ay dumating nang salat sa yaman <br />
+		Hanap na dunong ay iyong alay <br />
+		Ang layunin mong makatao <br />
+		Dinarangal ang Pilipino <br />
+		Ang iyong aral, diwa, adhikang taglay <br />
+		PUP, aming gabay <br />
+		Paaralang dakila <br />
+		PUP, pinagpala <br /> 
+		Gagamitin ang karunungan <br />
+		Mula sa iyo, para sa bayan <br />
+		Ang iyong aral, diwa, adhikang taglay <br />
+		PUP, aming gabay <br />
+		Paaralang dakila <br />
+		PUP, pinagpala <br /> <br />
+		<img src = "images/PUPLogo.png" width="100px" height = "100px" />
+		</p>	
+	</marquee>
+		<br />
+	<audio controls autoplay >
+		<source src = "sounds/The PUP Hymn.mp3" />
+		<source src = "sounds/The PUP Hymn.ogg" />
+		<p>
+		This browser does not support .ogg and .mp3 audio format
+		</p>
+	</audio>
+		<br /> <br />
+		<a href ="index.html" id = "again">
+			Play Again
+		</a>	
+	</div>
+</body>
+
+<footer>
+<div class = "footer">
+	<br />
+	<p> Copyright &copy 2021 POLYTECHNIC UNIVERSITY OF THE PHILIPPINES </p>
+</div> 
+</footer>
+</html>
