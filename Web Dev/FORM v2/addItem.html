@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<title>	add item </title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	
+	<body>
+		<div>
+			<h2>Add Item</h2>
+			
+			<form action="" method="post">
+		
+					<label for="itemName"> Item Name: </label>
+					<input type="text" id="itemName" name="itemName" required placeholder="Item Name"/> 
+				<br />
+					<label for="itemDescription"> Description: </label>
+					<input type="text" id="itemDescription" name="itemDescription" required placeholder="Item Description"/> 
+				<br />
+					<label for="itemUnitPrice"> Unit Price: </label>
+					<input type="number" id="itemUnitPrice" name="itemUnitPrice" required min="0" step=".01" placeholder="Unit price"/> 
+				<br />
+					<label for="itemInventoryQuantity"> Inventory Quantity: </label>
+					<input type="number" id="itemInventoryQuantity" name="itemInventoryQuantity" required min="0" placeholder="Inventory Quantity"/> 
+				<br />
+					
+					<input type="submit" name="submit" class="button" value="Submit" />
+			
+					<input type="reset" name="reset" class="button" value="Reset" />
+					
+			</form>
+		</div>
+	</body>
+</html>

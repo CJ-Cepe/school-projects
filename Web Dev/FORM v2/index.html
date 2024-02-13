@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>	Form </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+	
+		#headerOrderForm{
+			text-align: center;
+		}
+		
+		#customerID{
+			padding-left: 140px;
+		}
+		
+		#orderDateLabel{
+			padding-left: 600px;
+			text-align: right;
+		}
+	
+		#orderDate{width: 150px;}
+					
+		#customerName{width: 400px;}
+		
+		#orderNumberLabel{
+			padding-left: 238px;
+			text-align: right;
+		}
+		#orderNumber{width: 150px;}
+		
+		#address{width: 700px;}
+		#contactName{width: 400px;}
+		#phone{width: 250px;}
+		
+		#mobileLabel{ padding-left: 15px}
+		#mobile{width: 250px;}
+		
+		#emaiAddress{width: 350px;}
+		
+		#totalBlock{
+			display: block;
+			text-align: right;
+			padding-top: 10px;
+			padding-bottom:10px;
+		}
+				
+		.body1 {
+			padding-left: 50px;
+			padding-right: 50px;
+			padding-bottom:20px;
+			border: solid;
+			display: block;
+			text-align: justify;
+		}
+		
+		.body2 {
+			border: dotted;
+			padding-left: 20px;
+			padding-right:20px;
+			padding-bottom:20px;
+			padding-top:20px;
+			
+		}
+				
+		.textField {
+			padding: 5px;
+			margin-top: 5px;
+			margin-bottom: 5px;
+		}
+		
+		.labelClass{
+			display: inline-block;
+			width: 140px;
+			text-align: right;
+		}
+		
+		.button {
+			border: solid;
+			color: black;
+			background-color: #e7e7e7;
+			font-size: 16px;
+			padding: 5px 20px;
+			border-radius: 4px;
+			border-width: thin;
+			transition-duration: 0.4s;
+		}
+		
+		.button:hover {
+			background-color: black;
+			color: white;
+		}
+		
+		th {
+			text-align: center;
+		}
+		td{
+			text-align: center;
+			
+		}
+		
+		table {
+			column-width: 100px; 
+		
+			width: 100%;
+		}
+		
+		table,td,th {
+			  border: 1px solid black;
+			  border-collapse: collapse;
+		}
+		
+	</style>
+</head>
+
+<body>
+	<div class="body1">
+		<h1 id="headerOrderForm">Order Form</h1>
+		<form action ="#" method="post">
+			<div class="body2">
+				<a href = "#">Customer</a>  
+			
+				<p id="customerID"> Customer ID:0001
+				<label for="orderDate" id ="orderDateLabel"> Order Date: </label>
+				<input type="date" id="orderDate" class="textField" name="orderDate" maxlength="20" required /> <br />
+				</p>
+				
+				<label for="customerName" class ="labelClass">Customer Name:</label>
+				<input type="text" id="customerName" class ="textField" name="customerName" maxlength="255" required placeholder="enter customer name"/> 
+								
+				<label for="orderNumber" id="orderNumberLabel" class ="labelClass"> Order Number: </label>
+				<input type="number" id="orderNumber" class ="textField" name="orderNumber" maxlength="20" value="0001" readonly /> <br />
+						
+				<label for="address" class ="labelClass">Address:</label> 
+				<input type="text" id="address" class ="textField" name="address" maxlength="255" required placeholder="enter address" /> <br />
+				
+				<label for="contactName" class ="labelClass">Contact Name:</label>
+				<input type="text" id="contactName" class ="textField" name="contactName" maxlength="255" required placeholder="enter contact name"/> <br />
+				
+				<label for="phone" class ="labelClass">Phone:</label>
+				<input type="number" id="phone" class ="textField" name="phone" maxlength="20" placeholder="enter phone number" /> 
+				
+				<label for="mobile" id="mobileLabel">Mobile:</label>
+				<input type="number" id="mobile" class ="textField" name="mobile" maxlength="20" required placeholder="enter mobile number"/> <br />
+				
+				<label for="emailAddress" class ="labelClass"> E-mail Address: </label>
+				<input type="email" id="emailAddress" class ="textField" name="emailAddress" maxlength="255" required placeholder="enter email address"/> <br />
+
+			</div>
+			
+			<p> <a href="#"> Products to Order </a> </p> <br />
+
+				<table >
+					<thead>
+						<tr style="background-color:#000047; color:white; font-family: Helvetica; ">
+							<th scope="col"> Unit </th>
+							<th scope="col"> Quantity </th>
+							<th scope="col"> Product Code </th>
+							<th scope="col"> Description </th>
+							<th scope="col"> Unit Price </th>
+							<th scope="col"> Total Price </th>
+						</tr>
+					</thead>
+					
+					<tbody>
+					
+					<!-- ROW 1 -->
+						<tr>
+							<td> 
+									<select  name="unit1" style="width:97%;">
+										<option value="box">Box</option>
+										<option value="pc">Pc</option>
+										<option value="grams">Grams</option>
+										<option value="kilo">Kilo</option>
+									</select>
+							</td>
+							
+							<td>
+								<input type="number" id="quantity1" name="quantity1" maxlength="255" style="width:97%;"/>
+							</td>
+							
+							<td>
+								<select name="productCode1" style="width:97%;">
+									<option value="r1">R1</option>
+									<option value="r2">R2</option>
+									<option value="r3">R3</option>
+									<option value="r4">R4</option>
+									<option value="r5">R5</option>
+								</select>
+							</td>
+							
+							<td>
+								<input type="text" id="description1" name="description1" maxlength="255 " style="width:97%;" />
+							</td>
+							
+							<td>
+								<input type="number" id="unitPrice1" name="unitPrice1" maxlength="255" style="width:97%;"  />
+							</td>
+							
+							<td>
+								<input type="number" id="totalPrice1" name="totalPrice1" maxlength="255" style="width:97%;" />
+							</td>
+						</tr>	
+						
+						<!-- ROW 2 -->
+						<tr>
+							<td> 
+									<select  name="unit2" style="width:97%;">
+										<option value="box">Box</option>
+										<option value="pc">Pc</option>
+										<option value="grams">Grams</option>
+										<option value="kilo">Kilo</option>
+									</select>
+							</td>
+							
+							<td>
+								<input type="number" id="quantity2" name="quantity2" maxlength="255" style="width:97%;"/>
+							</td>
+							
+							<td>
+								<select name="productCode2" style="width:97%;">
+									<option value="r1">R1</option>
+									<option value="r2">R2</option>
+									<option value="r3">R3</option>
+									<option value="r4">R4</option>
+									<option value="r5">R5</option>
+								</select>
+							</td>
+							
+							<td>
+								<input type="text" id="description2" name="description2" maxlength="255" style="width:97%;"/>
+							</td>
+							
+							<td>
+								<input type="number" id="unitPrice2" name="unitPrice2" maxlength="255" style="width:97%;" />
+							</td>
+							
+							<td>
+								<input type="number" id="totalPrice2" name="totalPrice2" maxlength="255" style="width:97%;"/>
+							</td>
+						</tr>	
+						
+						<!-- ROW 3 -->
+						<tr>
+							<td> 
+									<select  name="unit3" style="width:97%;">
+										<option value="box">Box</option>
+										<option value="pc">Pc</option>
+										<option value="grams">Grams</option>
+										<option value="kilo">Kilo</option>
+									</select>
+							</td>
+							
+							<td>
+								<input type="number" id="quantity3" name="quantity3" maxlength="255" style="width:97%;"/>
+							</td>
+							
+							<td>
+								<select name="productCode3" style="width:97%;">
+									<option value="r1">R1</option>
+									<option value="r2">R2</option>
+									<option value="r3">R3</option>
+									<option value="r4">R4</option>
+									<option value="r5">R5</option>
+								</select>
+							</td>
+							
+							<td>
+								<input type="text" id="description3" name="description3" maxlength="255" style="width:97%;"/>
+							</td>
+							
+							<td>
+								<input type="number" id="unitPrice3" name="unitPrice3" maxlength="255" style="width:97%;" />
+							</td>
+							
+							<td>
+								<input type="number" id="totalPrice3" name="totalPrice3" maxlength="255" style="width:97%;" />
+							</td>
+						</tr>	
+					</tbody>
+					
+					<!-- ROW 4 -->
+						<tr>
+							<td> 
+									<select  name="unit4" style="width:97%;">
+										<option value="box">Box</option>
+										<option value="pc">Pc</option>
+										<option value="grams">Grams</option>
+										<option value="kilo">Kilo</option>
+									</select>
+							</td>
+							
+							<td>
+								<input type="number" id="quantity4" name="quantity4" maxlength="255" style="width:97%;"/>
+							</td>
+							
+							<td>
+								<select name="productCode4" style="width:97%;">
+									<option value="r1">R1</option>
+									<option value="r2">R2</option>
+									<option value="r3">R3</option>
+									<option value="r4">R4</option>
+									<option value="r5">R5</option>
+								</select>
+							</td>
+							
+							<td>
+								<input type="text" id="description4" name="description4" maxlength="255" style="width:97%;" />
+							</td>
+							
+							<td>
+								<input type="number" id="unitPrice4" name="unitPrice4" maxlength="255" style="width:97%;" />
+							</td>
+							
+							<td>
+								<input type="number" id="totalPrice4" name="totalPrice4" maxlength="255" style="width:97%;"/>
+							</td>
+						</tr>
+						
+						<!-- ROW 5 -->
+						<tr>
+							<td> 
+									<select  name="unit5" style="width:97%;">
+										<option value="box">Box</option>
+										<option value="pc">Pc</option>
+										<option value="grams">Grams</option>
+										<option value="kilo">Kilo</option>
+									</select>
+							</td>
+							
+							<td>
+								<input type="number" id="quantity5" name="quantity5" maxlength="255" style="width:97%;"/>
+							</td>
+							
+							<td>
+								<select name="productCode5" style="width:97%;">
+									<option value="r1">R1</option>
+									<option value="r2">R2</option>
+									<option value="r3">R3</option>
+									<option value="r4">R4</option>
+									<option value="r5">R5</option>
+								</select>
+							</td>
+							
+							<td>
+								<input type="text" id="description5" name="description5" maxlength="255" style="width:97%;" />
+							</td>
+							
+							<td>
+								<input type="number" id="unitPrice5" name="unitPrice5" maxlength="255" style="width:97%;" />
+							</td>
+							
+							<td>
+								<input type="number" id="totalPrice5" name="totalPrice5" maxlength="255" style="width:97%;"/>
+							</td>
+						</tr>	
+
+						
+				</table>
+			
+			<div id="totalBlock">
+			<label for="total">Total:</label>
+			<input type="number" id="total" name="total" maxlength="255"/> <br />
+			</div>
+			
+			<input type="submit" name="submit" class="button" value="Submit" />
+			
+			<input type="reset" name="reset" class="button" value="Reset" />
+		</form>
+	</div>
+</body>
+
+</html>
