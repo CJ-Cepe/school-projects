@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Add Customer Page </title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="stylesheet" href="css/HeaderFooter.css">
+		<link rel="stylesheet" href="css/forms.css">
+	</head>
+	
+	<body>
+		
+		<nav>
+			<ul>
+				<li><a href = "index.html">Home</a></li>
+				<li><a href = "#">Add Customer</a></li>
+				<li><a href = "addProducts.html">Add Product</a></li>
+				<li><a href = "#">Get Orders</a></li>
+			</ul>	
+		</nav>
+		
+		
+		
+			<h2>Add Customer</h2>
+			
+			<form action="php\addCustomer.php"  method="post">
+			
+			  <label for="name">Name:</label><br>
+			  <input type="text" id="name" name="name" value=""><br>
+			  
+			  <label for="address">Address:</label>
+			  <input type="text" id="address" name="address" value="">
+			  
+			  <label for="phone">Phone:</label><br>
+			  <input type="text" id="phone" name="phone" value=""><br>
+			  
+			  <label for="mobile">Mobile:</label><br>
+			  <input type="text" id="mobile" name="mobile" value=""><br>
+			  
+			  <label for="email">Email:</label><br>
+			  <input type="email" id="email" name="email" value=""><br>
+			  
+			  <input type="submit" value="SUBMIT">
+			  <input type="reset" value="RESET">
+			  
+			</form> 
+		
+	
+		<footer>
+			<div>
+				<a href="#"> Activity 6 </a>
+			</div>
+		</footer>
+	
+	</body>
+	
+
+</html>	
